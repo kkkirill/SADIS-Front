@@ -1,0 +1,25 @@
+.table, .row, .column {
+    display: flex;
+    flex-grow: 1;
+    height: 30vh;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: -1px;
+}
+.row {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color:cornsilk;
+}
+.column {
+    flex-direction: column;
+    background-color:sandybrown;
+}
+.bordered {
+    border: 4px solid black;
+}
+.table-header {
+    display: flex;
+    justify-content: center;
+}
