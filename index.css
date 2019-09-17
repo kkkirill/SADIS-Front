@@ -1,20 +1,27 @@
 .table, .row, .column {
     display: flex;
-    flex-grow: 1;
-    height: 30vh;
+    height: 65vh;;
     background-color: aqua;
     border: 1px solid black;
     margin: -1px;
+    /* align-content: stretch; */
+}
+.table {
+    align-items: stretch;
+    /* flex-wrap: wrap-reverse; */
 }
 .row {
+    height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color:cornsilk;
+    background-color:#fff8dc;
 }
 .column {
+    height: 100%;
+    flex-grow: 1;
     flex-direction: column;
-    background-color:sandybrown;
+    background-color:#f4a460;
 }
 .bordered {
     border: 4px solid black;
@@ -22,4 +29,15 @@
 .table-header {
     display: flex;
     justify-content: center;
+}
+.main-image {
+    object-fit: cover;
+    height: 80%;
+}
+.list-content {
+    flex-direction: column;
+    display: inline-block;
+}
+.text-content {
+    /* align-items: stretch; */
 }
