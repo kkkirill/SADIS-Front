@@ -16,7 +16,6 @@ img {
     border-bottom-width: 1px;
     height: 100%;
     align-items: center;
-    flex-grow: 0.2;
     justify-content: center;
     background-color:#fff8dc;
 }
@@ -28,8 +27,6 @@ img {
 }
 .bordered {
     border: 3px solid black;
-    /* border-block: inherit; */
-
 }
 .table-header {
     display: flex;
@@ -45,6 +42,11 @@ img {
 }
 .text-content {
     padding: 15px;
+}
+.text-content:hover{
+    text-decoration: underline;
+    text-decoration-color: rebeccapurple;
+    color: aqua;
 }
 .list-content > h5 {
     align-self: center;
