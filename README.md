@@ -1,2 +1,2 @@
-# SADIS Front №1
+# SADIS Front
 
