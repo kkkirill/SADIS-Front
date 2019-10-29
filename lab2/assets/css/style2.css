@@ -1,0 +1,79 @@
+body {
+    /* overflow: hidden; */
+    margin: 0;
+}
+
+.main2 {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(166, 209, 166);
+}
+
+.main2 div:not(:first-child) {
+    padding: 0 20px 20px;
+}
+
+.main2 .header {
+    background-color: white;
+}
+
+.main2 .button {
+    background: rgb(166, 209, 166);
+    padding: 10px 20px 0;
+    width: 133px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main2 .links a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 5vh;
+    border-right: 1px black solid;
+}
+
+.main2 .links a:last-child {
+    border-right: none;
+}
+
+.main2 .links a:first-child {
+    padding-left: 0;
+}
+
+.main2 .text {
+    padding: 20px 0 20px;
+    text-align: justify;
+}
+
+.main2 .image-block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.main2 .image-block .main {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main2 .note {
+    margin-bottom: 20px;
+}
+
+.main2 .footer {
+    border: 10px white solid;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+    width: 100%;
+}

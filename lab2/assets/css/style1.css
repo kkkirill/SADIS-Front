@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.window-border {
+    /* display: inline-flex; */
+    height: 100%;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.main1 {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+}
+
+.main1 .first {
+    flex: 0.5 0.5;
+    padding: 4.5em 1em 1em;
+    background-color: whitesmoke;
+}
+
+.main1 .second {
+    flex: 0.5 0.5;
+    padding: 1em;
+    background-color: rgb(226, 226, 226);
+}
+
+.main1 .history::before {
+    content: 'Local history';
+    display: flex;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.main1 .button {
+    position: absolute;
+    display: flex;
+    width: min-content;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: rgb(243, 195, 131);
+    padding-left: 0.3em;
+}
+
+.main1 .button::after {
+    content: '';
+    border-top: 1.2em solid black;
+    margin-left: -0.7em;
+    position: relative;
+    left: 0.7em;
+    border-right: 0.7em solid transparent;
+}
+
+.main1 .circles {
+    display: flex;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+.main1 .circles::after {
+    content: 'London';
+    position: absolute;
+    font-size: 3.8em;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: 600;
+    margin-top: 0.3em;
+    margin-left: 0.6em;
+    color: rgb(246, 177, 86);
+    letter-spacing: 0.3em;
+}
+
+.main1 .circle {
+    background-color: pink;
+    width: 8em;
+    height: 8em;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
