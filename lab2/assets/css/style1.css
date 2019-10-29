@@ -4,8 +4,6 @@ html, body {
 }
 
 .window-border {
-    /* display: inline-flex; */
-    height: 100%;
     border: 10px solid black;
     box-sizing: border-box;
 }
