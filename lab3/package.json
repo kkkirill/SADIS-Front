@@ -1,0 +1,23 @@
+{
+  "name": "galaxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kkkirill/SADIS-Front.git"
+  },
+  "author": "kkkirill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkkirill/SADIS-Front/issues"
+  },
+  "homepage": "https://github.com/kkkirill/SADIS-Front#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

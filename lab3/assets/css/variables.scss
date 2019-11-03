@@ -1,0 +1,36 @@
+$orbit-speed: 10;
+$orbit-size: 500px;
+$orbit-animation-duration: 10s;
+
+$planet-position-size: 30px;
+
+$sun-size: 150px;
+
+$saturn-size: ($sun-size * 0.45);
+$saturn-primary-ring-size: ($saturn-size * 1.1);
+$saturn-secondary-ring-size: ($saturn-size * 1.8);
+$saturn-orbit: ($orbit-size * 1.5);
+
+$mercury-size: ($sun-size * 0.1);
+$mercury-orbit: ($orbit-size * 0.35);
+
+$venus-size: ($sun-size * 0.2);
+$venus-orbit: (($orbit-size * 0.45));
+
+$earth-size: ($sun-size * 0.23);
+$earth-orbit: (($orbit-size * 0.6));
+
+$moon-size: ($sun-size * 0.095);
+$moon-orbit: ($earth-size * 1.5);
+
+$mars-size: ($sun-size * 0.17);
+$mars-orbit: (($orbit-size * 0.78));
+
+$jupiter-size: ($sun-size * 0.6);
+$jupiter-orbit: (($orbit-size));
+
+$uranus-size: ($sun-size * 0.3);
+$uranus-orbit: (($orbit-size * 1.83));
+
+$neptune-size: ($sun-size * 0.25);
+$neptune-orbit: (($orbit-size * 2));
