@@ -1,0 +1,324 @@
+.openbtn {
+    position: absolute;
+    z-index: 10;
+    color: #818181;
+    font-size: 36px;
+    padding: 8px 8px 8px;
+    transition: 0.3s;
+}
+
+.openbtn:hover {
+    color: #f1f1f1;
+}
+
+.sidenav {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border-right: 0px solid #818181;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav * {
+    transition-property: opacity, visibility;
+    transition-duration: 0.121s;
+    transition-delay: 0.15s, 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav h3 {
+    color: lightgray;
+    display: inline;
+    position: absolute;
+    top: 0;
+    font-size: 35px;
+    margin: 10px 35px 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    left: 140px;
+    top: 3px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #848484;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: lightgrey;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch input:checked + .slider {
+    background-color: #207bc5;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.on {
+    display: none;
+}
+
+.on, .off {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 73%;
+    font-size: 2px;
+    font-family: Verdana, sans-serif;
+}
+
+.on {
+    left: 30%;
+}
+
+.switch input:checked + .slider .on {
+    display: block;
+}
+
+.switch input:checked + .slider .off {
+    display: none;
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.controller {
+    padding: 30px 15px 5px 15px;
+}
+
+.sidenav p {
+    display: inline;
+    text-align: center;
+    color: lightgray;
+    font-size: xx-large;
+}
+
+.sidenav p span {
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: oblique;
+}
+
+.info .switch {
+    left: 125px;
+}
+
+.targets {
+    margin-bottom: 20px;
+}
+
+.info-target {
+    margin-left: -29px;
+}
+
+select {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 5px;
+    background-color: #201d1d;
+    color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none; 
+}
+
+select:hover, input:hover {
+    border-color: yellowgreen;
+}
+
+input {
+    margin-top: 10px;
+    height: 30px;
+    width: 228px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: lightgray;
+    background-color: #201d1d;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:invalid {
+    border-color: #750000;
+}
+
+input:invalid:hover {
+    border-color: #c70707;
+}
+
+.distance input {
+    margin-bottom: 5px;
+}
+
+.reset-button, .apply-button {
+    margin-left: 35%;
+    border-radius: 10px;
+    color: lightgray;
+    background-color: #201d1d;
+}
+
+.apply-button {
+    margin-left: 7%;
+}
+
+.reset-button:hover, .apply-button:hover {
+    border-color: yellowgreen;
+}
+
+.infos {
+    display: none;
+    position: absolute;
+    transform: rotateX(0deg) rotateZ(20deg);
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin-top: -90%;
+    margin-left: 90%;
+    padding-left: 100%;
+    transform-origin: 100% 100%;
+    transform-style: preserve-3d;
+}
+
+.infos::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 30px;
+    left: 15px;
+    bottom: 0;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transform-style: preserve-3d;
+    transform: skew(-45deg, 0deg);
+    box-shadow: inset 1px 1px black;
+}
+
+dl.infos dt {
+    position: absolute;
+    left: 50px;
+    margin-bottom: 26px;
+    bottom: 30px;
+    color:#FFF;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black;
+}
+
+dl.infos dd::after {
+    content: attr(data-after);
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    width: 300px;
+    color:#FFF;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+dl.infos dd span::after {
+    content: attr(data-after);
+    position: absolute;
+    left: 50px;
+    bottom: 14px;
+    width: 300px;
+    color:#FFF;
+    font: inherit;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-height: 700px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .controller {
+        padding: 10px 15px 5px 15px;
+    }
+    .dimensions {
+        padding-top: 40px;
+    }
+    .reset {
+        height: 40px;
+    }
+}

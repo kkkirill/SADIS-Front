@@ -1,0 +1,322 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.pos {
+    position: absolute;
+    top: 50%;
+    width: $planet-position-size;
+    height: $planet-position-size;
+    margin-top: -$planet-position-size/2;
+    margin-left: -$planet-position-size/2;
+    animation-name: invert-2d;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid rgba(199, 197, 197, 0.7);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: $orbit-size;
+    height: $orbit-size;
+    margin-left: -($orbit-size/2);
+    margin-top: -($orbit-size/2);
+    transform-style: preserve-3d;
+    animation-name: orbit;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: $orbit-animation-duration;
+}
+
+.galaxy {
+    background-image: url('../img/galaxy.jpg');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.solar-system {
+    position: absolute;
+    // transform: rotateX(75deg);
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+
+#sun {
+    @include planet-properties;
+    z-index: 1;
+    // transform: rotateX(-90deg);
+    background-image: url('../img/sun.png');
+    background-color: #FB7209;
+    box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
+    height: $sun-size;
+    width: $sun-size;
+    margin-left: -$sun-size/2;
+    margin-top: -$sun-size/2;
+}
+
+#mercury {
+    z-index: 10;
+    width: $mercury-orbit;
+    height: $mercury-orbit;
+    margin-left: -$mercury-orbit/2;
+    margin-top: -$mercury-orbit/2;
+    animation-duration: $orbit-animation-duration/8;
+}
+
+#mercury .pos {
+    animation-duration: $orbit-animation-duration/8;
+}
+
+#mercury .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/mercury.png');
+    width: $mercury-size;
+    height: $mercury-size;
+    margin-left: -$mercury-size/2;
+    margin-top: -$mercury-size/2;
+    // box-shadow: inset 10px 0 2px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow;
+    animation-duration: $orbit-animation-duration/8;
+}
+
+#venus {
+    z-index: 9;
+    width: $venus-orbit;
+    height: $venus-orbit;
+    margin-left: -$venus-orbit/2;
+    margin-top: -$venus-orbit/2;
+    animation-duration: $orbit-animation-duration/3;
+}
+
+#venus .pos {
+    animation-duration: $orbit-animation-duration/3;
+}
+
+#venus .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/venus.png');
+    width: $venus-size;
+    height: $venus-size;
+    margin-left: -$venus-size/2;
+    margin-top: -$venus-size/2;
+    animation-duration: $orbit-animation-duration/5;
+    // box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow;
+    animation-duration: $orbit-animation-duration/3;
+}
+
+#earth .pos .orbit {
+    z-index: 7;
+    width: $moon-orbit;
+    height: $moon-orbit;
+    margin-left: -$moon-orbit/2;
+    margin-top: -$moon-orbit/2;
+    // animation-name: suborbit;
+    animation-duration: $orbit-animation-duration/8;
+}
+
+#earth .pos .pos {
+    animation-duration: $orbit-animation-duration/8;
+}
+
+#earth .orbit .moon {
+    @include planet-properties;
+    background: #ffffff;
+    transform-style: preserve-3d;
+    width: $moon-size;
+    height: $moon-size;
+    margin-left: -$moon-size/2;
+    margin-top: -$moon-size/2;
+    // animation-name: shadow;
+    animation-duration: $orbit-animation-duration/2;
+}
+
+#earth {
+    z-index: 8;
+    width: $earth-orbit;
+    height: $earth-orbit;
+    margin-left: -$earth-orbit/2;
+    margin-top: -$earth-orbit/2;
+    animation-duration: $orbit-animation-duration/2;
+}
+
+#earth .pos {
+    animation-duration: $orbit-animation-duration/2;
+}
+
+#earth .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/earth.png');
+    width: $earth-size;
+    height: $earth-size;
+    margin-left: -$earth-size/2;
+    margin-top: -$earth-size/2;
+    // box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow;
+    animation-duration: $orbit-animation-duration/2;
+}
+
+#mars {
+    z-index: 6;
+    width: $mars-orbit;
+    height: $mars-orbit;
+    margin-left: -$mars-orbit/2;
+    margin-top: -$mars-orbit/2;
+    animation-duration: $orbit-animation-duration/1.6;
+}
+
+#mars .pos {
+    animation-duration: $orbit-animation-duration/1.6;
+}
+
+#mars .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/mars.png');
+    width: $mars-size;
+    height: $mars-size;
+    margin-left: -$mars-size/2;
+    margin-top: -$mars-size/2;
+    // animation-name: shadow;
+    animation-duration: $orbit-animation-duration/1.6;
+}
+
+
+#jupiter {
+    z-index: 5;
+    width: $jupiter-orbit;
+    height: $jupiter-orbit;
+    margin-left: -$jupiter-orbit/2;
+    margin-top: -$jupiter-orbit/2;
+    animation-duration: $orbit-animation-duration*5;
+}
+
+#jupiter .pos {
+    animation-duration: $orbit-animation-duration*5;
+}
+
+#jupiter .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/jupiter.png');
+    width: $jupiter-size;
+    height: $jupiter-size;
+    margin-left: -$jupiter-size/2;
+    margin-top: -$jupiter-size/2;
+    // box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow-jupiter;
+    animation-duration: $orbit-animation-duration*5;
+    animation-direction: reverse;
+}
+
+#saturn {
+    z-index: 4;
+    width: $saturn-orbit;
+    height: $saturn-orbit;
+    margin-left: -$saturn-orbit/2;
+    margin-top: -$saturn-orbit/2;
+    animation-duration: $orbit-animation-duration*7;
+}
+
+#saturn .pos {
+    animation-duration: $orbit-animation-duration*7;
+}
+
+#saturn .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/saturn.png');
+    width: $saturn-size;
+    height: $saturn-size;
+    margin-left: -$saturn-size/2;
+    margin-top: -$saturn-size/2;
+    // box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow-saturn;
+    animation-duration: $orbit-animation-duration*7;
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%; 
+    // transform: rotateX(-90deg);
+}
+
+#saturn .ring {
+    width: $saturn-primary-ring-size;
+    height: $saturn-primary-ring-size;
+    margin-top: -$saturn-primary-ring-size*0.25;
+    margin-left: -$saturn-primary-ring-size*0.25;
+    border: 15px solid rgba(160, 147, 130, 0.7);
+}
+  
+#saturn .ring::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: $saturn-secondary-ring-size;
+    height: $saturn-secondary-ring-size;
+    margin-top: -$saturn-secondary-ring-size/2;
+    margin-left: -$saturn-secondary-ring-size/2;
+    border: 2px solid rgba(160, 147, 130, 0.7);
+    box-sizing: border-box;
+}
+
+#uranus {
+    z-index: 3;
+    width: $uranus-orbit;
+    height: $uranus-orbit;
+    margin-left: -$uranus-orbit/2;
+    margin-top: -$uranus-orbit/2;
+    animation-duration: $orbit-animation-duration*9;
+}
+
+#uranus .pos {
+    animation-duration: $orbit-animation-duration*9;
+}
+
+#uranus .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/uranus.png');
+    width: $uranus-size;
+    height: $uranus-size;
+    margin-left: -$uranus-size/2;
+    margin-top: -$uranus-size/2;
+    // box-shadow: inset 8px 0 5px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow-uranus;
+    // animation-duration: $orbit-animation-duration*9;
+}
+
+#neptune {
+    z-index: 2;
+    width: $neptune-orbit;
+    height: $neptune-orbit;
+    margin-left: -$neptune-orbit/2;
+    margin-top: -$neptune-orbit/2;
+    animation-duration: $orbit-animation-duration*10;
+}
+
+#neptune .pos {
+    animation-duration: $orbit-animation-duration*10;
+}
+
+#neptune .pos .planet {
+    @include planet-properties;
+    background-image: url('../img/neptune.png');
+    width: $neptune-size;
+    height: $neptune-size;
+    margin-left: -$neptune-size/2;
+    margin-top: -$neptune-size/2;
+    // box-shadow: inset 12px 0 5px rgba(0, 0, 0, 0.5);
+    // animation-name: shadow-neptune;
+    animation-duration: $orbit-animation-duration*10;
+}
