@@ -284,8 +284,8 @@ $(document).ready(function () {
     $('#filterButton').click(e => {
         $.when(dbManager.select(true))
             .done(rows => {
-                rows.length && Object.values(rows.item(0))[0] &&
-                    formManager.showModal('Max and Min classes', rows);
+                const values = rows.length && Object.values(rows.item(0))[0] ? rows : [];
+                formManager.showModal('Max and Min classes', values);
             }
             );
     });
