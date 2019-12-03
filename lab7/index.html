@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="card-header d-flex justify-content-between" id="toolbar">
+            <div>
+                <button id="collapseCloseButton" class="btn btn-outline-warning collapsed" data-toggle="collapse"
+                href="#collapse-content" aria-expanded="false" aria-controls="collapse-content">Controls</button>
+            </div>
+        </div>
+        <div id="collapse-content" class="collapse" aria-labelledby="toolbar">
+            <div class="card-body">
+                <div class="row w-50 mx-auto pt-4">
+                    <div class="col-10">
+                        <select id="data-option" class="form-control btn-outline-primary">
+                            <option value="Belarus.json">Belarus</option>
+                            <option value="Russia.json">Russia</option>
+                            <option value="USA.json">USA</option>
+                            <option value="UK.json">UK</option>
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <button id="get-data-button" class="btn btn-outline-warning" href="#collapse-content" data-toggle="collapse">Get</button>
+                    </div>
+                    <div class="col-1">
+                        <button id="clear-button" class="btn btn-outline-warning" href="#collapse-content" data-toggle="collapse">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header w-25 mt-4 mx-auto text-center">
+                <p id="country-name"class="h1 text-warning"></p>
+                <img class="country-flag mb-3 mt-3" src="#"><br/>
+                <small class="text-primary bg-warning sub-title p-1">Country flag</small>            
+            </div>
+            <p class="h3 text-warning w-75 mx-auto mt-3">Information:</p>
+            <table class="table table-hover table-bordered table-warning w-75 mx-auto">
+                <thead class="bg-warning">
+                    <tr>
+                        <th class="col-2" scope="col">Property Name</th>
+                        <th class="col-3" scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

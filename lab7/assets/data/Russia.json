@@ -1,0 +1,65 @@
+{
+    "name": "Russian Federation",
+    "topLevelDomain": [
+        ".ru"
+    ],
+    "callingCodes": [
+        "7"
+    ],
+    "capital": "Moscow",
+    "altSpellings": [
+        "RU",
+        "Rossiya",
+        "Russian Federation",
+        "Российская Федерация",
+        "Rossiyskaya Federatsiya"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 146599183,
+    "latlng": [
+        60.0,
+        100.0
+    ],
+    "area": 1.7124442E7,
+    "timezones": [
+        "UTC+03:00",
+        "UTC+04:00",
+        "UTC+06:00",
+        "UTC+07:00",
+        "UTC+08:00",
+        "UTC+09:00",
+        "UTC+10:00",
+        "UTC+11:00",
+        "UTC+12:00"
+    ],
+    "borders": [
+        "AZE",
+        "BLR",
+        "CHN",
+        "EST",
+        "FIN",
+        "GEO",
+        "KAZ",
+        "PRK",
+        "LVA",
+        "LTU",
+        "MNG",
+        "NOR",
+        "POL",
+        "UKR"
+    ],
+    "nativeName": "Россия",
+    "numericCode": "643",
+    "currencies": [
+        {
+            "code": "RUB",
+            "name": "Russian ruble",
+            "symbol": "₽"
+        }
+    ],
+    "languages": [
+        "Russian"
+    ],
+    "flag": "https://restcountries.eu/data/rus.svg"
+}

@@ -1,0 +1,53 @@
+{
+    "name": "United States of America",
+    "topLevelDomain": [
+        ".us"
+    ],
+    "callingCodes": [
+        "1"
+    ],
+    "capital": "Washington, D.C.",
+    "altSpellings": [
+        "US",
+        "USA",
+        "United States of America"
+    ],
+	"region": "Americas",
+	"subregion": "Northern America",
+	"population": 323947000,
+	"latlng": [
+		38.0,
+		-97.0
+	],
+    "area": 9629091.0,
+    "timezones": [
+        "UTC-12:00",
+        "UTC-11:00",
+        "UTC-10:00",
+        "UTC-09:00",
+        "UTC-08:00",
+        "UTC-07:00",
+        "UTC-06:00",
+        "UTC-05:00",
+        "UTC-04:00",
+        "UTC+10:00",
+        "UTC+12:00"
+    ],
+    "borders": [
+        "CAN",
+        "MEX"
+    ],
+    "nativeName": "United States",
+    "numericCode": "840",
+    "currencies": [
+        {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        }
+    ],
+    "languages": [
+        "English"
+    ],
+    "flag": "https://restcountries.eu/data/usa.svg"
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Belarus",
+    "topLevelDomain": [
+        ".by"
+    ],
+    "callingCodes": [
+        "375"
+    ],
+    "capital": "Minsk",
+    "altSpellings": [
+        "BY",
+        "Bielaruś",
+        "Republic of Belarus",
+        "Белоруссия",
+        "Республика Беларусь",
+        "Belorussiya",
+        "Respublika Belarus’"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 9498700,
+    "latlng": [
+        53.0,
+        28.0
+    ],
+    "area": 207600.0,
+    "timezones": [
+        "UTC+03:00"
+    ],
+    "borders": [
+        "LVA",
+        "LTU",
+        "POL",
+        "RUS",
+        "UKR"
+    ],
+    "nativeName": "Белару́сь",
+    "numericCode": "112",
+    "currencies": [
+        {
+            "code": "BYN",
+            "name": "New Belarusian ruble",
+            "symbol": "Br"
+        },
+        {
+            "code": "BYR",
+            "name": "Old Belarusian ruble",
+            "symbol": "Br"
+        }
+    ],
+    "languages": [
+        "Belarusian",
+        "Russian"
+    ],
+    "flag": "https://restcountries.eu/data/blr.svg"
+}

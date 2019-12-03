@@ -1,0 +1,40 @@
+#toolbar {
+    background: rgb(86,189,254);
+    background: radial-gradient(circle, rgba(86,189,254,1) 0%, rgba(33,66,129,1) 50%, rgba(4,0,61,1) 100%); 
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#collapse-content {
+    background: rgb(86,189,254);
+    background: radial-gradient(circle, rgba(86,189,254,1) 0%, rgba(33,66,129,1) 50%, rgba(4,0,61,1) 100%); 
+}
+
+.content {
+    height: 100%;
+    display: none;
+    background-color: transparent;
+}
+
+.content > table {
+    margin-top: 40px;
+}
+
+.sub-title {
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.country-flag {
+    width: 400px;
+    height: 200px;
+}

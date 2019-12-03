@@ -1,0 +1,50 @@
+{
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "topLevelDomain": [
+        ".uk"
+    ],
+    "callingCodes": [
+        "44"
+    ],
+    "capital": "London",
+    "altSpellings": [
+        "GB",
+        "UK",
+        "Great Britain"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 65110000,
+    "latlng": [
+        54.0,
+        -2.0
+    ],
+    "area": 242900.0,
+    "timezones": [
+        "UTC-08:00",
+        "UTC-05:00",
+        "UTC-04:00",
+        "UTC-03:00",
+        "UTC-02:00",
+        "UTC",
+        "UTC+01:00",
+        "UTC+02:00",
+        "UTC+06:00"
+    ],
+    "borders": [
+        "IRL"
+    ],
+    "nativeName": "United Kingdom",
+    "numericCode": "826",
+    "currencies": [
+        {
+            "code": "GBP",
+            "name": "British pound",
+            "symbol": "£"
+        }
+    ],
+    "languages": [
+        "English"
+    ],
+    "flag": "https://restcountries.eu/data/gbr.svg"
+}
