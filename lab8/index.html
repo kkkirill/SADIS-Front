@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5 p-4 border border-primary rounded shadow-lg" id="mainForm">
+        <form action="" autocomplete="off">
+            <label for="order" class="font-weight-bold font-italic">Order Form</label>
+            <div class="form-group pl-3 pt-3 pb-1" id="order">
+                <input type="hidden" id="orderId">
+                <div class="form-group">
+                    <label for="inputOrderName">Name</label>
+                    <input class="form-control" id="inputOrderName" pattern="[A-ZА-Я]\w+" required>
+                </div>
+                <div class="form-row justify-content-around" id="class-info">
+                    <div class="form-group col-4">
+                        <label for="inputOrderCost">Cost</label>
+                        <input type="number" step="0.1" class="form-control" id="inputOrderCost" required>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="inputOrderAmount">Amount</label>
+                        <input type="number" class="form-control" id="inputOrderAmount" required>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-danger col-12 text-center collapse" role="alert">
+                <span class="error-msg pl-0 ml-0"><strong>Error!</strong></span>
+                <button type="button" class="close" aria-hidden="true">&times;</button>
+                <div>
+                    <ul class="errors-list text-left"></ul>
+                </div>
+            </div>
+            <label for="controls" class="font-weight-bold font-italic mb-2">Contols</label>
+            <hr class="border-primary pb-3 mt-0" />
+            <div class="form-row" id="controls">
+                <div class="btn-toolbar w-100 d-flex justify-content-between" role="toolbar">
+                    <div class="btn-group col-md-3 col-12" role="group">
+                        <button type="submit" class="btn btn-secondary" id="addButton" data-toggle="tooltip"
+                            title="Add data to database">Add</button>
+                        <button type="button" class="btn btn-secondary" id="clearButton" data-toggle="tooltip"
+                            title="Clear form">Clear</button>
+                    </div>
+                    <div class="btn-group col-md-3 col-12" role="group">
+                        <button type="button" class="btn btn-secondary" id="showButton" data-toggle="modal"
+                            data-target="#tableModal">
+                            <span class="h-100" data-toggle="tooltip" title="Show table">
+                                Show
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="fileShowButton" data-toggle="modal"
+                            data-target="#tableModal">
+                            <span class="h-100" data-toggle="tooltip" title="Show table from file">
+                                File
+                            </span>
+                        </button>
+                    </div>
+                    <div class="btn-group btn-group-justified col-md-5 col-12">
+                        <button type="button" class="btn btn-outline-danger mr-1 rounded-right" id="deleteButton"
+                            data-toggle="tooltip"
+                            title="Delete all orders with cost bigger then specified">Delete</button>
+                        <input id="delete-min-sum-input" step="0.1" type="number" class="form-control w-75 font-weight-bold" min="0" data-toggle="tooltip"
+                            title="Order cost minimum">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal fade bs-example-modal-lg" id="tableModal" tabindex="-1" style="overflow: auto;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body m-2">
+                    <table class="table-bordered col-12">
+                        <thead>
+                            <tr class="text-center table-primary">
+                                <th class="p-2">#</th>
+                                <th class="p-1">Name</th>
+                                <th class="p-1">Cost</th>
+                                <th class="p-1">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center"></tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
